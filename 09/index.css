@@ -1,0 +1,123 @@
+@import url('./common.css');
+/* index.css */
+
+header{
+    padding:60px 0;
+}
+header > div{
+    width:1200px; margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div > h1{}
+header > div > h1 > a{
+    color:#000;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size:30px;
+}
+header > div > nav{}
+header > div > nav > a{
+    font-weight:900;
+    display: inline-block;
+    margin:0 20px;
+}
+header > div > nav > a::after{
+    content:'';
+    display: block;
+    border-bottom:2px solid #000;
+    width:0%;
+    transition: 0.5s;
+    margin:0 auto;
+}
+header > div > nav > a:hover::after{
+    width:100%;
+}
+
+
+.trigger-menu{
+    width:30px; height:16px;
+    position: relative;
+    background-color: transparent !important;
+    border:none;
+    padding:0;
+    transition: 0.5s;
+}
+.trigger-menu > span{
+    width:100%; height:2px;
+    background-color: #000;
+    position:absolute;
+    left:0; top:0;
+}
+.trigger-menu > span:nth-child(1){top:0;}
+.trigger-menu > span:nth-child(2){top:50%;}
+.trigger-menu > span:nth-child(3){top:100%;}
+
+.trigger-menu:hover{
+    transform: rotate(90deg);
+}
+
+
+
+
+/* main */
+main{}
+.trands{
+    background: url('./img/img_spot.jpg') 0 0 / cover no-repeat;
+    height:750px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.trands > article{
+    background: #fff;
+    width:900px;
+    padding:60px;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.3);
+    /* box-shadow: x y blur color; */
+    margin-bottom:-5%;
+    transition: 0.5s;
+}
+.trands:hover > article{
+    margin-bottom:0%;
+}
+
+
+.trands > article > h2{
+    margin-bottom: 100px;
+    font-size:20px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    /* uppercase(대문자), lowercase(소문자),  capitalize(첫문자만 대문자)*/
+}
+.trands > article > figure{}
+.trands > article > figure > img{width:100%;}
+.trands > article > figure > figcaption{}
+.trands > article > figure > figcaption > p{
+    margin:40px 0;
+    font-weight: 200;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.trands > article > figure > figcaption > a{
+    font-size:20px;
+    text-transform: uppercase;
+}
+.trands > article > figure > figcaption > a>mark{
+    background-color: #fed38e;
+}
+.trands > article > figure > figcaption > a>b{}
+
+
+footer{
+    text-align: center;
+    padding:200px 0;
+}
+
+
+.icon{
+    font-family: 'Material Icons';
+    font-size:50px;
+    color:#f00;
+}
